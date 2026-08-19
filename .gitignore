@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Uploaded audio files (runtime)
+uploads/
+
+# Streamlit cache
+.streamlit/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Assignment PDFs (not part of the project)
+*.pdf
