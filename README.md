@@ -43,8 +43,9 @@ Upload a meeting recording to generate an instant **transcript**, **key decision
 ```text
 meeting-summarizer/
 ├── app.py              # Main Streamlit application
+├── style.css           # Custom CSS (loaded by app.py via load_css())
 ├── requirements.txt    # Minimal Python dependencies
 ├── .env.example        # Environment variable template
 ├── .gitignore          # Excluded files
-└── README.md           # Project documentation
+├── README.md           # Project documentation
 ```
