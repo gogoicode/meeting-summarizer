@@ -1,6 +1,6 @@
 # Meeting Summarizer
 
-> Transcribe meeting audio and generate action-oriented summaries powered by Google Gemini 3.6 Flash.
+> Transcribe meeting audio and generate action-oriented summaries powered by Google Gemini Flash.
 
 Upload a meeting recording to generate an instant **transcript**, **key decisions**, and **action items** — all powered by a single API pipeline.
 
@@ -8,7 +8,7 @@ Upload a meeting recording to generate an instant **transcript**, **key decision
 
 ## Features
 
-- **Audio Transcription** — Converts meeting audio directly to plain text using Google Gemini 3.6 Flash.
+- **Audio Transcription** — Converts meeting audio directly to plain text using Google Gemini Flash.
 - **AI-Powered Summaries** — Generates structured executive summaries from the transcript[cite: 2, 3].
 - **Key Decisions Extraction** — Highlights critical decisions made during the meeting[cite: 2, 3].
 - **Action Items with Owners** — Identifies tasks and assigns owners/deadlines when mentioned[cite: 2, 3].
@@ -22,7 +22,7 @@ Upload a meeting recording to generate an instant **transcript**, **key decision
 | Component                         | Technology                               |
 | :-------------------------------- | :--------------------------------------- |
 | **Frontend / UI**                 | Streamlit                                |
-| **Transcription & Summarization** | Google Gemini 2.0 Flash (`google-genai`) |
+| **Transcription & Summarization** | Google Gemini Flash (`google-genai`) |
 | **Language**                      | Python 3.10+                             |
 
 ---
