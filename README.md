@@ -1,4 +1,4 @@
-# 📋 Meeting Summarizer
+# Meeting Summarizer
 
 > Transcribe meeting audio and generate action-oriented summaries powered by Google Gemini 3.6 Flash.
 
@@ -6,7 +6,7 @@ Upload a meeting recording to generate an instant **transcript**, **key decision
 
 ---
 
-## ✨ Features
+## Features
 
 - **Audio Transcription** — Converts meeting audio directly to plain text using Google Gemini 3.6 Flash.
 - **AI-Powered Summaries** — Generates structured executive summaries from the transcript[cite: 2, 3].
@@ -17,7 +17,7 @@ Upload a meeting recording to generate an instant **transcript**, **key decision
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component                         | Technology                               |
 | :-------------------------------- | :--------------------------------------- |
@@ -26,8 +26,6 @@ Upload a meeting recording to generate an instant **transcript**, **key decision
 | **Language**                      | Python 3.10+                             |
 
 ---
-
-## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -42,11 +40,11 @@ Upload a meeting recording to generate an instant **transcript**, **key decision
    cd meeting-summarizer
    ```
 
-### Project Structure
-
+```text
 meeting-summarizer/
-├── app.py # Main Streamlit application/
-├── requirements.txt # Minimal Python dependencies/
-├── .env.example # Environment variable template/
-├── .gitignore # Excluded files (node_modules, .env, build artifacts)/
-└── README.md # Project documentation/
+├── app.py              # Main Streamlit application
+├── requirements.txt    # Minimal Python dependencies
+├── .env.example        # Environment variable template
+├── .gitignore          # Excluded files
+└── README.md           # Project documentation
+```
