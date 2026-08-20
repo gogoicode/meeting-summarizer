@@ -107,4 +107,4 @@ It's part of Python's standard library — no new dependency is introduced, keep
 
 - ✅ GitHub repository (this repo)
 - ✅ README with setup, usage, and design rationale
-- ⬜ Demo video *(add link here once recorded)*
+- ✅ Demo video Google Drive [link](https://drive.google.com/file/d/1kiww_WrRzDX58lzvnqYjjgyAz-yKqHlW/view?usp=sharing)
