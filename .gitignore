@@ -38,3 +38,17 @@ build/
 # Custom local folders
 test_audio/
 doc/
+
+# Environment variables
+.env
+ 
+# Python cache/build artifacts
+__pycache__/
+*.pyc
+ 
+# Local SQLite database (runtime-generated meeting history — not source)
+meetings.db
+ 
+# Editor/IDE
+.vscode/
+.idea/

@@ -13,11 +13,14 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 
+import database as db
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
 
 load_dotenv()
+db.init_db()
 
 st.set_page_config(
     page_title="Meeting Summarizer",
@@ -76,6 +79,21 @@ with st.sidebar:
         "Supported formats — MP3, WAV, M4A, WEBM, OGG\n\n"
         "Max file size — 20 MB (Gemini API limit)"
     )
+
+    st.markdown("---")
+    st.markdown("## Meeting History")
+    past_meetings = db.get_all_meetings()
+    if not past_meetings:
+        st.markdown("No meetings processed yet.")
+    else:
+        for meeting in past_meetings:
+            label = f"{meeting['filename']} — {meeting['created_at']}"
+            if st.button(label, key=f"history_{meeting['id']}", use_container_width=True):
+                record = db.get_meeting(meeting["id"])
+                st.session_state["transcript"] = record["transcript"]
+                st.session_state["summary"] = record["summary"]
+                st.session_state["processed"] = True
+                st.rerun()
 
 # ---------------------------------------------------------------------------
 # Hero header
@@ -297,6 +315,14 @@ if uploaded_file is not None:
                 st.stop()
 
         st.session_state["processed"] = True
+
+        # Persist this meeting to the local SQLite store
+        db.save_meeting(
+            filename=uploaded_file.name,
+            transcript=transcript,
+            summary=summary,
+        )
+
         st.rerun()
 
 # ---------------------------------------------------------------------------
