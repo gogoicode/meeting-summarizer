@@ -34,3 +34,7 @@ build/
 
 # Assignment PDFs (not part of the project)
 *.pdf
+
+# Custom local folders
+test_audio/
+doc/
